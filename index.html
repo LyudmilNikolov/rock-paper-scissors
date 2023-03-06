@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Simple Game</title>
+  <link href="app.css" rel="stylesheet" type="text/css">
+  <link rel="icon" type="image/x-icon" href="./images/logo.jpg" />
+</head>
+<body>
+  
+  <header class="header">
+    <h1 class="title">Man vs Machine</h1>
+  </header>
+  <main class="main">
+    <h2 class="score-message" id="scoreMessage">Play best of 5 vs Computer</h2>
+    <div class="score">
+      <div class="score-box">
+        <div class="sign" id="playerSign"></div>
+          <p class="score" id="playerScore">Player: 0</p>
+      </div>
+      <div class="score-box">
+        <div class="sign" id="computerSign"></div>
+          <p class="score" id="computerScore">Computer: 0</p>
+      </div>
+    </div>
+    <div class="options-container">
+      <button class="options">
+        <img src = "./images/rock.png" alt = "Rock" />
+      </button>
+      <button class="options">
+        <img src = "./images/document.png" alt = "Paper" />
+      </button>
+      <button class="options">
+        <img src = "./images/scissors.png" alt = "Scissors" />
+      </button>
+    </div>
+  </main>
+
+  <div class="modal" id="endgameModal">
+    <p class="modal-title" id="endgameMsg"></p>
+    <button class="btn-restart" id="restartBtn">Play again?</button>
+  </div>
+
+
+  <footer class="footer">
+    <p>
+      Copyright ©
+      <script>
+        document.write(new Date().getFullYear())
+      </script>
+      Nikolov
+    </p>
+  </footer>
+
+  
+
+  <script src="scripts.js"></script>
+
+</body>
+</html>
